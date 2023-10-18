@@ -16,7 +16,8 @@ int _islower(int c)
   {
     temp = 0;
   }
-	
+	return (temp)
 
 }
+
 
