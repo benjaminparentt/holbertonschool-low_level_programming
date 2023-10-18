@@ -7,12 +7,14 @@
  */
  int _isalpha(int C)
 {
+	int temp;
+
 	if ((c>=65 && c<90)) | ((c>=97 && c<=122))
 	{
-	return (1)
-	}
-
-	return (0)
+		temp = 1;
+	} else
+		temp = 0;
+	return (temp);
 
 }
 	
