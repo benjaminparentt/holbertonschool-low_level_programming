@@ -9,15 +9,15 @@
 int _islower(int c)
 {
 	int temp;
-  
+
 	if (islower(c))
 	{
 		temp = 1;
 	} else
 	{
-  		temp = 0;
+		temp = 0;
 	}
-	
+
 	return (temp);
 
 }
