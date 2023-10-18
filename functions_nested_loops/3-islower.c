@@ -5,10 +5,11 @@
   * @c: The character to be checked
   *
   * Return: 1 for lowercase character or 0 for anything else
-  */ 
+  */
 int _islower(int c)
 {
   int temp;
+  
 	if (islower(c))
 	{
 		temp = 1;
@@ -16,6 +17,6 @@ int _islower(int c)
   {
     temp = 0;
   }
-	return (temp);
+  return (temp);
 
 }
