@@ -10,7 +10,7 @@
 {
 	int temp;
 
-	if (isalpha(c))
+	if (_isalpha(c))
 	{
 		temp = 1;
 	} else
