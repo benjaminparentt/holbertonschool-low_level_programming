@@ -1,4 +1,5 @@
 #include "main.h"
+#include "stdio"
 /**
  * isalpha - Checks for alphabetic character
  * @c: the character to be checked
@@ -9,7 +10,7 @@
 {
 	int temp;
 
-	if (islwoer(c))
+	if (isalpha(c))
 	{
 		temp = 1;
 	} else
