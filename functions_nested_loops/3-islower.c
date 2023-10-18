@@ -12,12 +12,11 @@ int _islower(int c)
 	if (islower(c))
 	{
 		temp = 1;
-	{ else
+  } else
   {
     temp = 0;
   }
 	
 
 }
-
 
