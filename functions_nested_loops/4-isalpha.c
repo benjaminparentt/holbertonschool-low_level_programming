@@ -9,11 +9,13 @@
 {
 	int temp;
 
-	if ((c>=65 && c<90)) | ((c>=97 && c<=122))
+	if (islwoer(c))
 	{
 		temp = 1;
 	} else
+	{
 		temp = 0;
+	}
 	return (temp);
 
 }
