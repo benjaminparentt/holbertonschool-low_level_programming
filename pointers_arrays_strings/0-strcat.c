@@ -1,23 +1,25 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * *_strcpy - See description
- * @dest: char type string
- * @src: char type string
- * Description: Copy the string pointed to by pointer `src` to
- * the buffer pointed to by `dest`
- * Return: Pointer to `dest`
+ * _strcat - concatenate two strings
+ * @dest: char string to concatenate to
+ * @src: char string
+ * Return: pointer to resulting string `dest`
  */
 
-char *_strcpy(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
-	int i;
+	int i, c;
 
-	for (i = 0; src[i] != '\0'; i++)
+	for (i = 0; dest[i] != '\0'; i++)
+		;
+
+	for (c = 0; src[c] != '\0'; c++)
 	{
-		dest[i] = src[i];
+		dest[i] = src[c];
+		i++;
 	}
-	dest[i] = '\0';
 
+	dest[i] = '\0';
 	return (dest);
 }
