@@ -8,8 +8,10 @@
  *      */
 
 
-char* copier(char *dest, const char *src, int n) {
-	for (int i = 0; i < n; i++) {
+char* copier(char *dest, const char *src, int n)
+{
+	for (int i = 0; i < n; i++)
+       	{
 		dest[i] = src[i];
 		// if (src[i] == '\0') // Si la fin de la source est atteinte, on s'arrête
 		//         //     break;
