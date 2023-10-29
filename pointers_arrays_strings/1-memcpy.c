@@ -6,14 +6,12 @@
  * @c: character that needs to be found
  * Return: Always 0.
  */
-char *_strchr(char *s, char c)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int a;
+	unsigned int i;
 
-	for (a = 0; s[a] != '\0'; a++)
-	{
-		if (s[a] == c)
-			return (s[a]);
-	}
-	return (s[a]);
+	for (i = 0; i < n; i++)
+		dest[i] = src[i];
+
+	return (dest);
 }
