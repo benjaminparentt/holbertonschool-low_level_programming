@@ -1,34 +1,31 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *  * _strcat - concatenate two strings
- *   * @dest: char string to concatenate to
- *    * @src: char string
- *     * Return: pointer to resulting string `dest`
- *      */
+ * _strncat - concatenates two strings
+ *
+ * @dest: string that is added to
+ * @src: string to be appended
+ * @n: the number of bytes from @src
+ *
+ * Return: a pointer to the resulting string @dest
+ */
 
-
-char* copier(char *dest, const char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	for (int i = 0; i < n; i++)
-       	{
-		dest[i] = src[i];
-		// if (src[i] == '\0') // Si la fin de la source est atteinte, on s'arrête
-		//         //     break;
-	}
-}
-int main(void)
-{
-	char s1[98];
-	char *ptr;
+	int len1 = 0; /* string length for src */
+	int len2 = 0; /* string length for dest */
 	int i;
-	for (i = 0; i < 98 - 1; i++)
+
+	while (src[len1] != '\0')
+		len1++;
+
+	while (dest[len2] != '\0')
+		len2++;
+
+	for (i = 0; i < n; i++)
 	{
-		s1[i] = '*';
+		dest[len2] = src[i];
+		len2++;
 	}
-	s1[i] = '\0';
-	ptr = copier(s1, "Voici la phrase que je veux copier", 20);
-	printf("%s", s1);
-
-	return (0);
-
+	return (dest);
+}
