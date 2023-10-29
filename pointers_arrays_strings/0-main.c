@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdio.h>
-
+char *_strncat(char *, char *, int);
 /**
  * main - check the code for Holberton School students.
  *
