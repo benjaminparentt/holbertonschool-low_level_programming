@@ -1,4 +1,4 @@
-fndef DOG_H
+#ifndef DOG_H
 #define DOG_H
 /**
  *  * struct dog - dog data
@@ -10,9 +10,9 @@ fndef DOG_H
  *        */
 typedef struct dog
 {
-		char *name;
-			float age;
-				char *owner;
+	char *name;
+	float age;
+	char *owner;
 } dog_t;
 /* Additional function prototypes */
 int _putchar(char c);
